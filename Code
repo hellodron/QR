@@ -1,0 +1,6 @@
+use qrcode::QrCode;
+
+fn generate_qr_code(data: &str) -> Option<QrCode> {
+    // Generate a QR code from the given data
+    QrCode::new(data).ok()
+}
